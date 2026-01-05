@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 // Esercizio 1:
 // Implementare i seguenti metodi:
 // - moltiplica: accetta due interi e ritorna il loro prodotto
@@ -41,7 +43,7 @@ public class Es1 {
     // ------------- METODO inseriscilnArray ---------------
 
     public static void inseriscilnArray (String[] arraySt, String singolaStringa) {
-        System.out.println(arraySt[0] + " " + arraySt[1] + " " + singolaStringa + " " + arraySt[2] + " "
-                + arraySt[3] + " " +  arraySt[4]);
+        String[] nuovoArr = {arraySt[0],arraySt[1], singolaStringa, arraySt[2], arraySt[3], arraySt[4]};
+        System.out.println(Arrays.toString(nuovoArr));
     }
 }
