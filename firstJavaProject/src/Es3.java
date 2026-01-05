@@ -26,7 +26,8 @@ public class Es3 {
         System.out.println("Esercizio 2");
         System.out.println("Scrivi un numero, se il resto è 0 il numero è pari, con 1 è dispari.");
         int num = sc.nextInt();
-        pariDispari(num);
+        System.out.println(pariDispari(num));
+
         System.out.println("Esercizio 3");
         System.out.println("Scrivi la lunghezza dei tre lati del triangolo, per saperne l'area.");
         double num1 = sc.nextDouble();
@@ -41,9 +42,8 @@ public class Es3 {
         System.out.println(  "Il perimetro del rettangolo è: " + perimetro );
     }
 // ------------- METODO pariDispari --------------
-public static void pariDispari(int num) {
-        int controllo = num % 2;
-    System.out.println("Il resto è di " + controllo);
+public static int pariDispari(int num) {
+        return num % 2;
 }
 
 // ------------- METODO perimetroTriangolo --------------
